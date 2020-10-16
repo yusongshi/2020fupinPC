@@ -1,0 +1,389 @@
+@charset "utf-8";
+/***************公共样式**************/
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+form {
+  margin: 0px;
+  padding: 0px;
+}
+html,
+body {
+  height: 100%;
+  font-family: Microsoft YaHei;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+  font-size: 100%;
+}
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+li {
+  margin: 0;
+  padding: 0;
+}
+a {
+  color: inherit;
+  &:link {
+    text-decoration: none;
+  }
+  &:visited {
+    text-decoration: none;
+  }
+  &:hover {
+    text-decoration: underline;
+  }
+  &:active {
+    text-decoration: none;
+  }
+}
+img {
+  border: 0;
+}
+dl {
+  margin: 0;
+  padding: 0;
+  dd {
+    margin: 0;
+  }
+}
+.float_left {
+  float: left;
+}
+.float_right {
+  float: right;
+}
+.clear {
+  clear: both;
+  line-height: 0;
+  padding: 0;
+  margin: 0;
+}
+input,
+select {
+  padding: 0;
+  border: 1px solid #dcdcdc;
+  display: block;
+  background: #fff;
+  outline: none;
+  border-radius: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  &:focus {
+    outline: none;
+    background: #fff;
+    color: #333;
+    border: 1px solid #dcdcdc;
+  }
+}
+@import "include";
+
+.bg1 {
+  background: url(../img/20201009-pc-fupin_banner_01.jpg) center center
+    no-repeat;
+  height: 275px;
+}
+.bg2 {
+  background: url(../img/20201009-pc-fupin_banner_02.jpg) center center
+    no-repeat;
+  height: 276px;
+}
+.bg3 {
+  background: url(../img/20201009-pc-fupin_banner_03.jpg) center center
+    no-repeat;
+  height: 275px;
+}
+.bg4 {
+  background: url(../img/20201009-pc-fupin_banner_04.jpg) center center
+    no-repeat;
+  height: 275px;
+}
+.shoupinbg {
+  background: url(../img/20201009-pc-fupin_shoupin.jpg) center center no-repeat;
+  height: 560px;
+  .contentbox {
+    width: 1200px-40px;
+    padding: 25px 20px;
+    background: #fff;
+    margin: 0 auto;
+    overflow: hidden;
+    .swiper-container {
+      width: 614px;
+      height: 440px;
+      margin: auto;
+      float: left;
+      .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+        position: relative;
+        h1 {
+          width: 100%;
+          height: 36px;
+          line-height: 36px;
+          font-size: 16px;
+          color: #fff;
+          background: #000;
+          position: absolute;
+          left: 0;
+          bottom: 0;
+          text-align: center;
+          @include font-overflow(36px)
+        }
+        > img {
+          display: block;
+          width: 100%;
+          height: 100%;
+        }
+      }
+      .swiper-pagination{
+        bottom: 44px;
+        .swiper-pagination-bullet{
+          width: 68px;
+          height: 2px;
+          border-radius: 0;
+          background: #ffffff;
+          opacity: 1;
+          &.swiper-pagination-bullet-active{
+            background:#ff264f;
+          }
+        }
+      }
+    }
+    .dongtaibaogao {
+      width: 514px;
+      float: right;
+      img.tit {
+        display: block;
+      }
+      ul.list {
+        li {
+          color: #52514f;
+          padding: 17px 0;
+          h1 {
+            font-size: 22px;
+            line-height: 40px;
+            font-weight: bold;
+            @include font-overflow(40px);
+          }
+          h2 {
+            font-size: 14px;
+            line-height: 26px;
+            @include font-overflow-more(2);
+          }
+        }
+      }
+    }
+  }
+}
+.xunzhan {
+  position: relative;
+  width: 100%;
+  z-index: 1;
+  .xzbg1 {
+    background: url(../img/20201009-pc-fupin_xunzhan_01.jpg) center center
+      no-repeat;
+    height: 385px;
+  }
+  .xzbg2 {
+    background: url(../img/20201009-pc-fupin_xunzhan_02.jpg) center center
+      no-repeat;
+    height: 386px;
+  }
+  .xzbg3 {
+    background: url(../img/20201009-pc-fupin_xunzhan_03.jpg) center center
+      no-repeat;
+    height: 385px;
+  }
+  .xzbg4 {
+    background: url(../img/20201009-pc-fupin_xunzhan_04.jpg) center center
+      no-repeat;
+    height: 386px;
+  }
+  .xzbg5 {
+    background: url(../img/20201009-pc-fupin_xunzhan_05.jpg) center center
+      no-repeat;
+    height: 385px;
+  }
+  ul.list {
+    position: absolute;
+    width: 1120px;
+    top: 330px-82px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    z-index: 2;
+    li {
+      background: url(../img/20201009-pc-fupin-zhaopian.png) center top
+        no-repeat;
+      width: 331px-19px;
+      height: 313px-88px;
+      overflow: hidden;
+      padding: 88px 0 0 19px;
+      margin-top: 82px;
+      img {
+        display: block;
+        width: 300px;
+        height: 190px;
+      }
+      h1 {
+        font-size: 14px;
+        line-height: 32px;
+        color: #372406;
+        @include font-overflow(32px);
+      }
+    }
+  }
+}
+div.fuhua {
+  position: relative;
+  z-index: 1;
+  div.fhbg1 {
+    background: url(../img/20201009-pc-fupin_fuhua_01.jpg) center center
+      no-repeat;
+    height: 456px;
+  }
+  div.fhbg2 {
+    background: url(../img/20201009-pc-fupin_fuhua_02.jpg) center center
+      no-repeat;
+    height: 456px;
+  }
+  .swiper-container-box {
+    width: 1200px;
+    height: 395px;
+    padding-top: 300px;
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    .swiper-container {
+      width: 1200px;
+      height: 316px;
+      overflow: initial;
+      .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+        transition: all 0.5s ease-out;
+        z-index: 2;
+        background: #a8a8a8;
+        filter: blur(1px);
+        border-radius: 5px;
+        &.swiper-slide-active {
+          transform: scale(1.5);
+          background: #fff;
+          filter: blur(0);
+          z-index: 3;
+        }
+        img {
+          display: block;
+          padding-top: 20px;
+          width: 348px;
+          height: 246px;
+          margin: 0 auto;
+        }
+        h1 {
+          font-size: 14px;
+          line-height: 40px;
+          @include font-overflow(60px);
+        }
+      }
+    }
+  }
+}
+div.tuopinji {
+  position: relative;
+  z-index: 1;
+  div.tpjbg1 {
+    background: url(../img/20201009-pc-fupin_tuopinji_01.jpg) center center
+      no-repeat;
+    height: 376px;
+  }
+  div.tpjbg2 {
+    background: url(../img/20201009-pc-fupin_tuopinji_02.jpg) center center
+      no-repeat;
+    height: 376px;
+  }
+  div.tpjbg3 {
+    background: url(../img/20201009-pc-fupin_tuopinji_03.jpg) center center
+      no-repeat;
+    height: 376px;
+  }
+
+  #wrap3d {
+    width: 1000px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 186px;
+    margin: 0 auto;
+    z-index: 2;
+    #showcase {
+      width: 1100px;
+      height: 596px;
+      margin-left: -49px;
+      .cloud9-item {
+        position: relative;
+        display: inline-block;
+        width: 232px;
+        height: 448px;
+        opacity: 1;
+        cursor: pointer;
+        >img.bg{
+          display: block;
+          width: 100%;
+          height: 100%;
+        }
+        div.txn{
+          position: absolute;
+          left: 19px;
+          top: 45px;
+          width: 190px;
+          height: 350px;
+          img{
+            display: block;
+            width: 100%;
+            height: 100%;
+          }
+          h1{
+            position: absolute;
+            width: 100%;
+            left: 0;
+            bottom: 0;
+            font-size: 14px;
+            color: #fff;
+            line-height: 1.6;
+            padding: 10px 0;
+            text-align: center;
+            z-index: 4;
+            background: rgba($color: #000000, $alpha: 0.5);
+          }
+        }
+        
+        
+      }
+    }
+  }
+  /* 3d轮播图样式 */
+}

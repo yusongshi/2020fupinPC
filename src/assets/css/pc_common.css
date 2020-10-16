@@ -1,0 +1,449 @@
+@charset "UTF-8";
+/***************公共样式**************/
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+form {
+  margin: 0px;
+  padding: 0px;
+}
+
+html,
+body {
+  height: 100%;
+  font-family: Microsoft YaHei;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+  font-size: 100%;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+li {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: inherit;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a:active {
+  text-decoration: none;
+}
+
+img {
+  border: 0;
+}
+
+dl {
+  margin: 0;
+  padding: 0;
+}
+
+dl dd {
+  margin: 0;
+}
+
+.float_left {
+  float: left;
+}
+
+.float_right {
+  float: right;
+}
+
+.clear {
+  clear: both;
+  line-height: 0;
+  padding: 0;
+  margin: 0;
+}
+
+input,
+select {
+  padding: 0;
+  border: 1px solid #dcdcdc;
+  display: block;
+  background: #fff;
+  outline: none;
+  border-radius: 0;
+  box-sizing: border-box;
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+}
+
+input:focus,
+select:focus {
+  outline: none;
+  background: #fff;
+  color: #333;
+  border: 1px solid #dcdcdc;
+}
+
+.bg1 {
+  background: url(../img/20201009-pc-fupin_banner_01.jpg) center center no-repeat;
+  height: 275px;
+}
+
+.bg2 {
+  background: url(../img/20201009-pc-fupin_banner_02.jpg) center center no-repeat;
+  height: 276px;
+}
+
+.bg3 {
+  background: url(../img/20201009-pc-fupin_banner_03.jpg) center center no-repeat;
+  height: 275px;
+}
+
+.bg4 {
+  background: url(../img/20201009-pc-fupin_banner_04.jpg) center center no-repeat;
+  height: 275px;
+}
+
+.shoupinbg {
+  background: url(../img/20201009-pc-fupin_shoupin.jpg) center center no-repeat;
+  height: 560px;
+}
+
+.shoupinbg .contentbox {
+  width: 1160px;
+  padding: 25px 20px;
+  background: #fff;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.shoupinbg .contentbox .swiper-container {
+  width: 614px;
+  height: 440px;
+  margin: auto;
+  float: left;
+}
+
+.shoupinbg .contentbox .swiper-container .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  position: relative;
+}
+
+.shoupinbg .contentbox .swiper-container .swiper-slide h1 {
+  width: 100%;
+  height: 36px;
+  line-height: 36px;
+  font-size: 16px;
+  color: #fff;
+  background: #000;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  text-align: center;
+  height: 36px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.shoupinbg .contentbox .swiper-container .swiper-slide > img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.shoupinbg .contentbox .swiper-container .swiper-pagination {
+  bottom: 44px;
+}
+
+.shoupinbg .contentbox .swiper-container .swiper-pagination .swiper-pagination-bullet {
+  width: 68px;
+  height: 2px;
+  border-radius: 0;
+  background: #ffffff;
+  opacity: 1;
+}
+
+.shoupinbg .contentbox .swiper-container .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
+  background: #ff264f;
+}
+
+.shoupinbg .contentbox .dongtaibaogao {
+  width: 514px;
+  float: right;
+}
+
+.shoupinbg .contentbox .dongtaibaogao img.tit {
+  display: block;
+}
+
+.shoupinbg .contentbox .dongtaibaogao ul.list li {
+  color: #52514f;
+  padding: 17px 0;
+}
+
+.shoupinbg .contentbox .dongtaibaogao ul.list li h1 {
+  font-size: 22px;
+  line-height: 40px;
+  font-weight: bold;
+  height: 40px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.shoupinbg .contentbox .dongtaibaogao ul.list li h2 {
+  font-size: 14px;
+  line-height: 26px;
+  display: block;
+  display: -webkit-box;
+  /*! autoprefixer: ignore next */
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.xunzhan {
+  position: relative;
+  width: 100%;
+  z-index: 1;
+}
+
+.xunzhan .xzbg1 {
+  background: url(../img/20201009-pc-fupin_xunzhan_01.jpg) center center no-repeat;
+  height: 385px;
+}
+
+.xunzhan .xzbg2 {
+  background: url(../img/20201009-pc-fupin_xunzhan_02.jpg) center center no-repeat;
+  height: 386px;
+}
+
+.xunzhan .xzbg3 {
+  background: url(../img/20201009-pc-fupin_xunzhan_03.jpg) center center no-repeat;
+  height: 385px;
+}
+
+.xunzhan .xzbg4 {
+  background: url(../img/20201009-pc-fupin_xunzhan_04.jpg) center center no-repeat;
+  height: 386px;
+}
+
+.xunzhan .xzbg5 {
+  background: url(../img/20201009-pc-fupin_xunzhan_05.jpg) center center no-repeat;
+  height: 385px;
+}
+
+.xunzhan ul.list {
+  position: absolute;
+  width: 1120px;
+  top: 248px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  z-index: 2;
+}
+
+.xunzhan ul.list li {
+  background: url(../img/20201009-pc-fupin-zhaopian.png) center top no-repeat;
+  width: 312px;
+  height: 225px;
+  overflow: hidden;
+  padding: 88px 0 0 19px;
+  margin-top: 82px;
+}
+
+.xunzhan ul.list li img {
+  display: block;
+  width: 300px;
+  height: 190px;
+}
+
+.xunzhan ul.list li h1 {
+  font-size: 14px;
+  line-height: 32px;
+  color: #372406;
+  height: 32px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+div.fuhua {
+  position: relative;
+  z-index: 1;
+}
+
+div.fuhua div.fhbg1 {
+  background: url(../img/20201009-pc-fupin_fuhua_01.jpg) center center no-repeat;
+  height: 456px;
+}
+
+div.fuhua div.fhbg2 {
+  background: url(../img/20201009-pc-fupin_fuhua_02.jpg) center center no-repeat;
+  height: 456px;
+}
+
+div.fuhua .swiper-container-box {
+  width: 1200px;
+  height: 395px;
+  padding-top: 300px;
+  position: absolute;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+
+div.fuhua .swiper-container-box .swiper-container {
+  width: 1200px;
+  height: 316px;
+  overflow: initial;
+}
+
+div.fuhua .swiper-container-box .swiper-container .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  transition: all 0.5s ease-out;
+  z-index: 2;
+  background: #a8a8a8;
+  filter: blur(1px);
+  border-radius: 5px;
+}
+
+div.fuhua .swiper-container-box .swiper-container .swiper-slide.swiper-slide-active {
+  transform: scale(1.5);
+  background: #fff;
+  filter: blur(0);
+  z-index: 3;
+}
+
+div.fuhua .swiper-container-box .swiper-container .swiper-slide img {
+  display: block;
+  padding-top: 20px;
+  width: 348px;
+  height: 246px;
+  margin: 0 auto;
+}
+
+div.fuhua .swiper-container-box .swiper-container .swiper-slide h1 {
+  font-size: 14px;
+  line-height: 40px;
+  height: 60px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+div.tuopinji {
+  position: relative;
+  z-index: 1;
+  /* 3d轮播图样式 */
+}
+
+div.tuopinji div.tpjbg1 {
+  background: url(../img/20201009-pc-fupin_tuopinji_01.jpg) center center no-repeat;
+  height: 376px;
+}
+
+div.tuopinji div.tpjbg2 {
+  background: url(../img/20201009-pc-fupin_tuopinji_02.jpg) center center no-repeat;
+  height: 376px;
+}
+
+div.tuopinji div.tpjbg3 {
+  background: url(../img/20201009-pc-fupin_tuopinji_03.jpg) center center no-repeat;
+  height: 376px;
+}
+
+div.tuopinji #wrap3d {
+  width: 1000px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 186px;
+  margin: 0 auto;
+  z-index: 2;
+}
+
+div.tuopinji #wrap3d #showcase {
+  width: 1100px;
+  height: 596px;
+  margin-left: -49px;
+}
+
+div.tuopinji #wrap3d #showcase .cloud9-item {
+  position: relative;
+  display: inline-block;
+  width: 232px;
+  height: 448px;
+  opacity: 1;
+  cursor: pointer;
+}
+
+div.tuopinji #wrap3d #showcase .cloud9-item > img.bg {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+div.tuopinji #wrap3d #showcase .cloud9-item div.txn {
+  position: absolute;
+  left: 19px;
+  top: 45px;
+  width: 190px;
+  height: 350px;
+}
+
+div.tuopinji #wrap3d #showcase .cloud9-item div.txn img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+div.tuopinji #wrap3d #showcase .cloud9-item div.txn h1 {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  font-size: 14px;
+  color: #fff;
+  line-height: 1.6;
+  padding: 10px 0;
+  text-align: center;
+  z-index: 4;
+  background: rgba(0, 0, 0, 0.5);
+}
+/*# sourceMappingURL=pc_common.css.map */

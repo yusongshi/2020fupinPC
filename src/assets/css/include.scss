@@ -1,0 +1,17 @@
+@mixin font-overflow($height) {
+  @if ($height) {
+    height: $height;
+  }
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+@mixin font-overflow-more($index: 2) {
+  display: block;
+  display: -webkit-box;
+  /*! autoprefixer: ignore next */
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: $index;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
