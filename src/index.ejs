@@ -11,8 +11,8 @@
     <meta name="keywords" content="" />
     <meta name="description" content="" />
     <title></title>
-    <link rel="stylesheet" href="./assets/css/swiper3.min.css">
-    <link rel="stylesheet" href="./assets/css/animate.min.css">
+    <link rel="stylesheet" href="./<%= htmlWebpackPlugin.options.publicPath %>/css/swiper3.min.css">
+    <link rel="stylesheet" href="./<%= htmlWebpackPlugin.options.publicPath %>/css/animate.min.css">
     <style>[v-cloak]{display: none!important;}</style>
 </head>
 
@@ -38,7 +38,7 @@
                 </div>
                 <div class="dongtaibaogao">
                     <a href="" target="_blank">
-                        <img class="tit" src="./assets/img/20201009-pc-fupin-dongtaitit.jpg" />
+                        <img class="tit" src="<%= require('./assets/img/20201009-pc-fupin-dongtaitit.jpg') %>" />
                     </a>
                     
                     <ul class="list">
@@ -86,7 +86,7 @@
 
                     <div class="cloud9-item"  v-for="data in tuopinji">
                         <a :href="data.href" target="_blank">
-                            <img class="bg" src="./assets/img/20201009-pc-fupin-shouji.png" />
+                            <img class="bg" src="<%= require('./assets/img/20201009-pc-fupin-shouji.png') %>" />
                             <div class="txn">
                                 <img :src="data.src" />
                                 <h1>{{ data.title }}</h1>
@@ -286,10 +286,10 @@
         }
     </script>
     <script src="http://www.cqnews.net/js/jquery.min.js"></script>
-    <script src="./assets/js/swiper3.min.js"></script>
-    <script src="./assets/js/vue2.0.0.js"></script>
+    <script src="./<%= htmlWebpackPlugin.options.publicPath %>/js/swiper3.min.js"></script>
+    <script src="./<%= htmlWebpackPlugin.options.publicPath %>/js/vue2.0.0.js"></script>
     <script src="http://i.cqnews.net/templateRes/202003/25/403160/403160/js/jquery.cloud9carousel.js"></script>
-    <script src="./assets/js/index.js"></script>
+    <script src="./<%= htmlWebpackPlugin.options.publicPath %>/js/index.js"></script>
 </body>
 
 </html>

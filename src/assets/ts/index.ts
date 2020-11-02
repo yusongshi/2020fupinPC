@@ -1,4 +1,5 @@
 import '../css/pc_common.scss';
+
 interface Alldata{
     [propName: string]: any
 }
